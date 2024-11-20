@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 
   def create
     @post.comments.create! params.expect(comment: [:content])
-    redirect @post
+    redirect_to @post
   end
 
   private
