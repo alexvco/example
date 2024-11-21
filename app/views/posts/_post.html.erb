@@ -9,4 +9,14 @@
     <%= post.body %>
   </p>
 
+  <p>
+    <strong>Random:</strong>
+    <%= rand %>
+  </p>
+
+  <% if controller_name == 'posts' && action_name == 'index' %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+  <% end %>
 </div>
